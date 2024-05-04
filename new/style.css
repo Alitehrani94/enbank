@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+    
+}body {
+    font-family: Vazirmatn;
+    padding: 10px;
+    background: #ffffff;
+    direction: rtl;
+  }
+  
+  
+  .header {
+    padding: 30px;
+    text-align: center;
+    
+   
+  }
+  
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #ddd;
+   
+  }
+  .button{
+    background-color: rgba(105, 14, 135, 0.515);
+
+  }
+  
+  
+  .topnav a {
+    float: right;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+  }
+  
+ 
+  .topnav a:hover {
+    background-color: #ddd;
+    color: rgb(255, 0, 0);
+  }
+  
+ 
+  .rightcolumn {   
+    float: right;
+    width: 75%;
+  }
+
+  h2{
+    text-align: center;
+    background-color: #ddd;
+  }
+  
+  
+  .leftcolumn {
+    float: left;
+    width: 25%;
+   
+    padding-left: 20px;
+  }
+  
+  
+  .giftcard {
+    width: 100%;
+    padding: 45px;
+  }
+ 
+  .flex-container {
+    display: flex;
+    align-items: stretch;
+    background-color: #f1f1f1;
+  }
+  
+  .flex-container > div {
+    
+    color: white;
+    margin: 18px;
+    
+   
+    
+  }
+  .flex-container a{
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+  }
+  .flex-container a:hover{
+    color: red;
+   
+  }
+  .flex-container-2 a:hover{
+    width: 100%;
+    filter: blur(2px);
+
+  }
+  
+  .card {
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .card a{
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+  }
+  .card a:hover{
+    color: red;
+    filter: blur(1px);
+  }
+  .card>ul{
+    display: block;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .row a:hover{
+    filter: blur(1px);
+    filter: drop-shadow(1px);
+  }
+  table td{
+    width: 60%;
+    height: 60px;
+  }
+  
+ .copyright{
+    margin-top: 30px;
+    background-color: #8e8282;
+    padding: 2%;
+ }
+  .footer {
+    padding: 20px;
+    width: 100%;
+    background: #ddd;
+    margin-top: 20px;
+    display: flex;
+    
+  }
+  .footer p{
+    color: rgb(116, 112, 107);
+  }
+  
+.rightcolumn a:hover{
+    filter: blur(1px);
+}
+
+.leftcolumn a{
+    text-decoration: none;
+    color: #000000;
+}
+.leftcolumn a:hover{
+    color: red;
+}
+  .contain{
+    display:inline-flexbox
+  }
+  .contain a{
+    text-decoration: none;
+  }
+  .contain a:hover{
+    filter: blur(1px);
+  }
+
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn , .footer , .copyright{   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+      
+    }
+  }
